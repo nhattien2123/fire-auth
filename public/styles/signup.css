@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -5,8 +7,7 @@
 }
 
 main {
-    width: 100vw;
-    height: 800px
+    width: 100vw
 }
 
 .container,
@@ -21,50 +22,22 @@ main {
 .container {
     position: absolute;
     left: 50%;
-    top: 80%;
-    transform: translate(-50%, -80%)
-}
-
-.socialMedia-container,
-.phone-container {
-    display: none
-}
-
-.wrapper {
-    position: relative;
-    height: 80%;
-}
-
-input[type = "radio"] {
-    margin: 10px
+    top: 50%;
+    transform: translate(-50%, -50%)
 }
 
 fieldset, .feedbackContainer {
     border: rgb(192,192,192,0.1) 1px solid;
-    height: 500px;
+    height: 460px;
     box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.12)
 }
 
-.signUp-container fieldset {
-    height: 450px
-}
-
-.phone-container fieldset {
-    height: 550px
-}
-
-.shown-container {
-    display: block
-}
-
-.hidden-container {
-    display: none
-}
 
 input[type = "text"],
 input[type = "password"],
 input[type = "tel"],
-input[type = "email"] {
+input[type = "email"],
+input[type = "url"] {
     width: 340px;
     margin-top: 8px;
     padding: 2px 6px;
@@ -93,16 +66,8 @@ button:first-of-type {
     color: white
 }
 
-a {
-    float: right;
-    margin: 10px 44px 0px 0px;
-    text-decoration: none;
-    color: #2196f3;
-    font-size: 0.8rem
-}
-
-a:hover {
-    text-decoration: underline
+.clear {
+    clear: both
 }
 
 button:hover {
@@ -115,35 +80,21 @@ button {
     margin-right: 5px
 }
 
-.clearfix {
-    clear: both
-}
-
 .container div {
-    margin: 20px 40px;
+    margin: 10px 40px;
     position: relative
 }
 
-.mail-container img,
-.phone-container img {
+img {
     width: 100px;
     height: 100px;
     margin: auto;
     display: block
 }
 
-.mail-container div:first-of-type,
-.phone-container div:first-of-type {   
+.signup-container div:first-of-type {   
     width: 340px;
-    margin: 40px 40px
-}
-
-#recaptcha-container, #recaptcha-container div {
-    margin: 10px 0px 0px 0px
-}
-
-#recaptcha-container {
-    float: right
+    margin-top: 50px;
 }
 
 label {
@@ -209,25 +160,6 @@ label {
     left: 6px;
     color: #505050;
     font-size: 1rem
-}
-
-.socialMedia-container button {
-    width: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 10px;
-    margin: 10px 40px;
-    border: none;
-    background-color: white;
-    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.12);
-    font-size: 1rem;
-    color: #2196f3
-}
-
-.socialMedia-container button:hover {
-    background-color: #f7f7f7;
-    box-shadow: 1px 0px 7px 0px rgba(0,0,0,0.15)
 }
 
 .feedbackContainer {
